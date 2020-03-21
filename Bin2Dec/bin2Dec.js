@@ -1,10 +1,16 @@
-function validaEntrada() {
-    var txtbin = document.getElementById("txtbin").value
+function validaEntrada(txtbin) {
+    var entradaValida;
+    this.txtbin = txtbin
     if(txtbin.length == 0 || txtbin.length > 8) {
         alert(`"${txtbin}" não é um valor válido. Digite um número binário com até 8 caractéres.`)
+        entradaValida = false
     } else if (validaEntradaBinario(txtbin) == false) {
-        alert(`"${txtbin}" não é um valor válido. Digite um número binário.`)        
+        alert(`"${txtbin}" não é um valor válido. Digite um número binário.`)
+        entradaValida = false
+    } else {
+        entradaValida = true
     }
+    return entradaValida
 }
 
 function validaEntradaBinario(txtbin) {
@@ -19,10 +25,15 @@ function validaEntradaBinario(txtbin) {
     return nrBinario
 }
 
-function conversao() {
-
+function conversao(txtbin) {
+    var nrDecimal = parseInt(txtbin, 2)
+    return nrDecimal
 }
 
 function mostraConversao() {
-    validaEntrada()
+    var txtbin = document.getElementById("txtbin").value
+    var result = document.querySelector("div#result")
+    if (validaEntrada(txtbin)) {
+        result.innerHTML=`Número decimal: ${conversao(txtbin)}`
+    }
 }
