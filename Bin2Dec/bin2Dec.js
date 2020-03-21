@@ -32,8 +32,13 @@ function conversao(txtbin) {
 
 function mostraConversao() {
     var txtbin = document.getElementById("txtbin").value
-    var result = document.querySelector("div#result")
+    var result = document.getElementById("result")
     if (validaEntrada(txtbin)) {
-        result.innerHTML=`Número decimal: ${conversao(txtbin)}`
+        result.setAttribute("value",`${conversao(txtbin)}`)
     }
+}
+
+function limpaResult() {
+    var result = document.getElementById("result")
+    result.setAttribute("value","")
 }

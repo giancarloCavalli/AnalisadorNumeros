@@ -8,17 +8,17 @@
 </head>
 <body>
     <header>
-        <h1>Conversor de Binário para Decimal</h1>
+        <h2>Conversor de Binário para Decimal</h1>
     </header>
 
     <section>
         <div>
-            Número binário <input type="text" name="txtbin" id="txtbin">
-            <input type="button" value="Converter" onclick="mostraConversao()">
+            Binário: <input type="text" class="box" name="txtbin" id="txtbin" value="Digite o binário" oninput="limpaResult()">
+            <input type="button" class="box" value="Converter" onclick="mostraConversao()">
         </div>
             
-        <div id="result">
-
+        <div>
+            Decimal: <input type="text" name="result" id="result" class="box" readonly>
         </div>
     </section>
 
