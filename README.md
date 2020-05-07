@@ -1,14 +1,23 @@
-## Projeto
+# Analisador de Números
 
-Lista de projetos desenvolvida com base na coleção de desafios [app-ideas](https://github.com/florinpop17/app-ideas) e alguns poucos outros exercícios.
+Registrador de valores em uma tabela visual, com validações de entrada, e com função de exibir algumas informações aleatórias sobre o conjunto de números.
+Projeto feito a partir do uso de:
 
-### Projetos
+* HTML
+* CSS
+* Javascript
 
-| Nome                                                                              | Breve descrição                                            | Nível      |
-| --------------------------------------------------------------------------------- | ---------------------------------------------------------- | ---------- |
-| [Bin2Dec](./Bin2Dec)                                                              | Binary-to-Decimal number converter                         | 1-Beginner |
-| [AnalisadorDeNumeros](./AnalisadorNumeros)                                        | Register values and get some random info about them        | 1-Beginner |
-| [Border-radiusPreviewer](./BorderRadiusPreviewer)                                 | Border-radius Previewer                                    | 1-Beginner |
+### Desenvolvido com base no exercício abaixo
+
+* [AnalisadorNumeros](https://www.youtube.com/watch?v=vEOEZ03ZyiE&list=PLHz_AreHm4dlsK3Nr9GVvXCbpQyHQl1o1&t=0s) ~ by Curso em Vídeo
+
+## Getting Started
+
+Faça download do projeto com o git clone e execute o arquivo .html
+
+## Built With
+
+* [VSCode](https://code.visualstudio.com/)
 
 ## Author
 
